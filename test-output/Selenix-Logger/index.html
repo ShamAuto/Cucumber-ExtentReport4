@@ -107,7 +107,7 @@
 									</span>
 									</a>
 									<div class="dropdown-menu pt-0 mt-2 animate fadeIn">
-										<a class="dropdown-item" href="#"><span class="tf" status="pass"><i class="fa fa-dot-circle-o text-success"></i>Pass</span></a>
+										
 										<a class="dropdown-item" href="#"><span class="tf" status="fail"><i class="fa fa-dot-circle-o text-danger"></i>Fail</span></a>
 										
 										
@@ -144,12 +144,12 @@
 								<div class="col-md-8 col-sm-12">
 									<div class="logger-content">
 										<h6 class="mb-3 ml-1">Test Logs</h6>
-											<div class="tsc" status="pass">
-											<div class="st pass test l0" 
+											<div class="tsc" status="fail">
+											<div class="st fail test l0" 
 												tags="@bing @search"
 												devices="">
-												<span class="tt">11.22.2020 07:45:46</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">09.26.2024 21:47:41</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
 												<span class="tn">[Bing Search] started</span>
 												<span class="category-list">
 													<span class="category badge"><i class="fa fa-tag"></i> @bing</span>
@@ -161,19 +161,19 @@
 												</span>
 												
 											</div>
-											<div class="st pass test l1" 
+											<div class="st fail test l1" 
 												tags=""
 												devices="">
-												<span class="tt">11.22.2020 07:45:46</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">09.26.2024 21:47:41</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
 												<span class="tn">|---[Doing Bing Search] started</span>
 												
 											</div>
-											<div class="st pass test l2" 
+											<div class="st fail test l2" 
 												tags="@bing @search"
 												devices="">
-												<span class="tt">11.22.2020 07:45:46</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">09.26.2024 21:47:41</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Doing Bing Search] started</span>
 												<span class="category-list">
 													<span class="category badge"><i class="fa fa-tag"></i> @bing</span>
@@ -185,49 +185,145 @@
 												</span>
 												
 											</div>
-											<div class="st pass test l3" 
+											<div class="st fail test l3" 
 												tags=""
 												devices="">
-												<span class="tt">11.22.2020 07:45:46</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">09.26.2024 21:47:41</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Steps.Hooks.setUp()] started</span>
+												
+												<div class="st fail">
+													<span class="tt">09.26.2024 21:47:47</span>&nbsp;
+													<span class="ts">fail</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Steps.Hooks.setUp()]</span>
+													
+													<span class="td">threw an exception<br><textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 129.0.6668.60 with binary path C:\Users\ShameemAkther\AppData\Local\Google\Chrome\Application\chrome.exe
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'IBM-519SMM3', ip: '192.168.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x007CA813+48355]
+	(No symbol) [0x0075C4B1]
+	(No symbol) [0x00665358]
+	(No symbol) [0x006861AC]
+	(No symbol) [0x00681EF3]
+	(No symbol) [0x00680579]
+	(No symbol) [0x006B0C55]
+	(No symbol) [0x006B093C]
+	(No symbol) [0x006AA536]
+	(No symbol) [0x006882DC]
+	(No symbol) [0x006893DD]
+	GetHandleVerifier [0x00A2AABD+2539405]
+	GetHandleVerifier [0x00A6A78F+2800735]
+	GetHandleVerifier [0x00A6456C+2775612]
+	GetHandleVerifier [0x008551E0+616112]
+	(No symbol) [0x00765F8C]
+	(No symbol) [0x00762328]
+	(No symbol) [0x0076240B]
+	(No symbol) [0x00754FF7]
+	BaseThreadInitThunk [0x76A07BA9+25]
+	RtlInitializeExceptionChain [0x7747C11B+107]
+	RtlClearBits [0x7747C09F+191]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$1(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:136)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:75)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:150)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+	at Steps.Hooks.setUp(Hooks.java:19)
+</textarea></span>
+												</div>
+											</div>
+											<div class="st skip test l3" 
+												tags=""
+												devices="">
+												<span class="tt">09.26.2024 21:47:47</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I open bing page] started</span>
 												
-												<div class="st pass">
-													<span class="tt">11.22.2020 07:45:47</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st skip">
+													<span class="tt">09.26.2024 21:47:47</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I open bing page]</span>
 													
-													<span class="td"></span>
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
-											<div class="st pass test l3" 
+											<div class="st skip test l3" 
 												tags=""
 												devices="">
-												<span class="tt">11.22.2020 07:45:47</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">09.26.2024 21:47:47</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When I check for the bing page title] started</span>
 												
-												<div class="st pass">
-													<span class="tt">11.22.2020 07:45:47</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st skip">
+													<span class="tt">09.26.2024 21:47:47</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When I check for the bing page title]</span>
 													
-													<span class="td"></span>
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
-											<div class="st pass test l3" 
+											<div class="st skip test l3" 
 												tags=""
 												devices="">
-												<span class="tt">11.22.2020 07:45:47</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">09.26.2024 21:47:47</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then I search the "Bing Search" in bing step] started</span>
 												
-												<div class="st pass">
-													<span class="tt">11.22.2020 07:45:50</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st skip">
+													<span class="tt">09.26.2024 21:47:47</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then I search the "Bing Search" in bing step]</span>
 													
-													<span class="td"></span>
+													<span class="td">Step skipped</span>
+												</div>
+											</div>
+											<div class="st fail test l3" 
+												tags=""
+												devices="">
+												<span class="tt">09.26.2024 21:47:47</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Steps.Hooks.tearDown(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">09.26.2024 21:47:47</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Steps.Hooks.tearDown(io.cucumber.java.Scenario)]</span>
+													
+													<span class="td">this is my failure message</span>
+												</div>
+												<div class="st fail">
+													<span class="tt">09.26.2024 21:47:47</span>&nbsp;
+													<span class="ts">fail</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Steps.Hooks.tearDown(io.cucumber.java.Scenario)]</span>
+													
+													<span class="td">threw an exception<br><textarea disabled class="code-block">java.lang.NullPointerException
+	at Steps.Hooks.tearDown(Hooks.java:37)
+</textarea></span>
 												</div>
 											</div>
 											</div>
@@ -235,7 +331,7 @@
 											<div class="st fail test l0" 
 												tags="@google @search"
 												devices="">
-												<span class="tt">11.22.2020 07:45:55</span>&nbsp;
+												<span class="tt">09.26.2024 21:47:47</span>&nbsp;
 												<span class="ts">fail</span>&nbsp;&nbsp;
 												<span class="tn">[Google Search] started</span>
 												<span class="category-list">
@@ -251,7 +347,7 @@
 											<div class="st fail test l1" 
 												tags=""
 												devices="">
-												<span class="tt">11.22.2020 07:45:55</span>&nbsp;
+												<span class="tt">09.26.2024 21:47:47</span>&nbsp;
 												<span class="ts">fail</span>&nbsp;&nbsp;
 												<span class="tn">|---[Doing Google Search] started</span>
 												
@@ -259,7 +355,7 @@
 											<div class="st fail test l2" 
 												tags="@google @search"
 												devices="">
-												<span class="tt">11.22.2020 07:45:55</span>&nbsp;
+												<span class="tt">09.26.2024 21:47:47</span>&nbsp;
 												<span class="ts">fail</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Doing Google Search] started</span>
 												<span class="category-list">
@@ -272,91 +368,160 @@
 												</span>
 												
 											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">11.22.2020 07:45:55</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I open google page] started</span>
-												
-												<div class="st pass">
-													<span class="tt">11.22.2020 07:45:58</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I open google page]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l3" 
-												tags=""
-												devices="">
-												<span class="tt">11.22.2020 07:45:58</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When I check for the google page title] started</span>
-												
-												<div class="st pass">
-													<span class="tt">11.22.2020 07:45:58</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When I check for the google page title]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
 											<div class="st fail test l3" 
 												tags=""
 												devices="">
-												<span class="tt">11.22.2020 07:45:58</span>&nbsp;
+												<span class="tt">09.26.2024 21:47:47</span>&nbsp;
 												<span class="ts">fail</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then I search the "Google Search" in google step] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Steps.Hooks.setUp()] started</span>
 												
 												<div class="st fail">
-													<span class="tt">11.22.2020 07:46:02</span>&nbsp;
+													<span class="tt">09.26.2024 21:47:50</span>&nbsp;
 													<span class="ts">fail</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then I search the "Google Search" in google step]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Steps.Hooks.setUp()]</span>
 													
-													<span class="td">threw an exception<br><textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[My Title]> but was:<[Google Search - Google Search]>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at Steps.Steps.i_search_the_keyword_in_google_step(Steps.java:39)
-	at ?.I search the "Google Search" in google step(file:///E:/workspace/CucumberExtentReport4/src/test/java/Features/Google.feature:7)
+													<span class="td">threw an exception<br><textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 129.0.6668.60 with binary path C:\Users\ShameemAkther\AppData\Local\Google\Chrome\Application\chrome.exe
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'IBM-519SMM3', ip: '192.168.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x007CA813+48355]
+	(No symbol) [0x0075C4B1]
+	(No symbol) [0x00665358]
+	(No symbol) [0x006861AC]
+	(No symbol) [0x00681EF3]
+	(No symbol) [0x00680579]
+	(No symbol) [0x006B0C55]
+	(No symbol) [0x006B093C]
+	(No symbol) [0x006AA536]
+	(No symbol) [0x006882DC]
+	(No symbol) [0x006893DD]
+	GetHandleVerifier [0x00A2AABD+2539405]
+	GetHandleVerifier [0x00A6A78F+2800735]
+	GetHandleVerifier [0x00A6456C+2775612]
+	GetHandleVerifier [0x008551E0+616112]
+	(No symbol) [0x00765F8C]
+	(No symbol) [0x00762328]
+	(No symbol) [0x0076240B]
+	(No symbol) [0x00754FF7]
+	BaseThreadInitThunk [0x76A07BA9+25]
+	RtlInitializeExceptionChain [0x7747C11B+107]
+	RtlClearBits [0x7747C09F+191]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$1(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:136)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:75)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:150)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+	at Steps.Hooks.setUp(Hooks.java:19)
 </textarea></span>
 												</div>
 											</div>
 											<div class="st skip test l3" 
 												tags=""
 												devices="">
-												<span class="tt">11.22.2020 07:46:02</span>&nbsp;
+												<span class="tt">09.26.2024 21:47:50</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I open google page] started</span>
+												
+												<div class="st skip">
+													<span class="tt">09.26.2024 21:47:50</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I open google page]</span>
+													
+													<span class="td">Step skipped</span>
+												</div>
+											</div>
+											<div class="st skip test l3" 
+												tags=""
+												devices="">
+												<span class="tt">09.26.2024 21:47:50</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When I check for the google page title] started</span>
+												
+												<div class="st skip">
+													<span class="tt">09.26.2024 21:47:50</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When I check for the google page title]</span>
+													
+													<span class="td">Step skipped</span>
+												</div>
+											</div>
+											<div class="st skip test l3" 
+												tags=""
+												devices="">
+												<span class="tt">09.26.2024 21:47:50</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then I search the "Google Search" in google step] started</span>
+												
+												<div class="st skip">
+													<span class="tt">09.26.2024 21:47:50</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then I search the "Google Search" in google step]</span>
+													
+													<span class="td">Step skipped</span>
+												</div>
+											</div>
+											<div class="st skip test l3" 
+												tags=""
+												devices="">
+												<span class="tt">09.26.2024 21:47:50</span>&nbsp;
 												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And I skipping this step] started</span>
 												
 												<div class="st skip">
-													<span class="tt">11.22.2020 07:46:02</span>&nbsp;
+													<span class="tt">09.26.2024 21:47:50</span>&nbsp;
 													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And I skipping this step]</span>
 													
 													<span class="td">Step skipped</span>
 												</div>
 											</div>
-											<div class="st pass test l3" 
+											<div class="st fail test l3" 
 												tags=""
 												devices="">
-												<span class="tt">11.22.2020 07:46:02</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">09.26.2024 21:47:50</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Steps.Hooks.tearDown(io.cucumber.java.Scenario)] started</span>
 												
 												<div class="st info">
-													<span class="tt">11.22.2020 07:46:02</span>&nbsp;
+													<span class="tt">09.26.2024 21:47:50</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Steps.Hooks.tearDown(io.cucumber.java.Scenario)]</span>
 													
 													<span class="td">this is my failure message</span>
 												</div>
-												<div class="st info">
-													<span class="tt">11.22.2020 07:46:03</span>&nbsp;
-													<span class="ts">info</span>&nbsp;&nbsp; 
+												<div class="st fail">
+													<span class="tt">09.26.2024 21:47:50</span>&nbsp;
+													<span class="ts">fail</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Steps.Hooks.tearDown(io.cucumber.java.Scenario)]</span>
-													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded1.png' src='../embedded1.png'></span>
-													<span class="td"></span>
+													
+													<span class="td">threw an exception<br><textarea disabled class="code-block">java.lang.NullPointerException
+	at Steps.Hooks.tearDown(Hooks.java:37)
+</textarea></span>
 												</div>
 											</div>
 											</div>
